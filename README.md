@@ -1,6 +1,8 @@
 # Pure Excel
 
 Excel app on pure JS
+![image](https://github.com/frodiBjorn/excel-course/assets/79738906/dc8f6e3b-3bd5-47f3-b249-069bb72752e1)
+![image](https://github.com/frodiBjorn/excel-course/assets/79738906/87f2344f-c257-47d9-afc2-2de18d9f8f5b)
 
 ## Установка
 

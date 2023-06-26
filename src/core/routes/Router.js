@@ -1,4 +1,4 @@
-import { $ } from '@core/dom';
+import { $ } from '../dom';
 import { ActiveRoute } from './ActiveRoute';
 
 export class Router {
@@ -6,6 +6,7 @@ export class Router {
     if (!selector) {
       throw new Error('Selector is not provided in Router');
     }
+
     this.$placeholder = $(selector);
     this.routes = routes;
 
@@ -15,14 +16,17 @@ export class Router {
 
     this.init();
   }
+
   init() {
     window.addEventListener('hashchange', this.changePageHandler);
     this.changePageHandler();
   }
+
   changePageHandler() {
     if (this.page) {
       this.page.destroy();
     }
+
     this.$placeholder.clear();
 
     const Page = ActiveRoute.path.includes('excel')
